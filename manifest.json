@@ -1,0 +1,37 @@
+{
+    "name": "EcoTravel",
+    "short_name": "EcoTravel",
+    "start_url": "/index.html",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/image/Eco_192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/image/Eco_512x512-1.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "background_color": "#05bf34",
+    "theme_color": "#0bd247",
+    "display": "standalone",
+    "lang": "es",
+    "description": "EcoTravel - Descubre el Mundo de Forma Sostenible.",
+    "screenshots": [
+      {
+        "src": "/image/Screenshot_PC.png",
+        "sizes": "1918x910",
+        "type": "image/png",
+        "form_factor": "wide" 
+      },
+      {
+        "src": "/image/Screenshot_Movil.png",
+        "sizes": "367x795",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ]
+}

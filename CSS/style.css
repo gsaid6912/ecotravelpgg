@@ -1,0 +1,245 @@
+body {
+    /* Establece la fuente base, los márgenes y el padding a cero, el color de texto y el fondo de la página */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgb(221, 221, 221);
+}
+
+header {
+    /* Define el estilo del encabezado con un fondo verde, texto blanco, y centrado */
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 10%;
+    text-align: center;
+}
+
+nav {
+    /* Establece el fondo del menú de navegación en color oscuro y lo mantiene visible aunque haya más contenido */
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    /* Estiliza los enlaces de navegación para que se alineen a la izquierda y sean visibles como bloques */
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* Cambia el color del enlace cuando el usuario pasa el cursor por encima */
+    background-color: #ddd;
+    color: black;
+}
+
+/* Clase para destacar la pestaña activa en la navegación */
+nav a.active {
+    background-color: #4CAF50; /* Color de fondo verde para la pestaña activa */
+    color: white; /* Texto blanco para la pestaña activa */
+}
+
+
+.banner {
+    /* Estiliza la sección de banner con una imagen de fondo, texto centrado y grande, y espacio generoso */
+    background-image: url('/image/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    /* Define el tamaño de la fuente para el título principal del banner */
+    font-size: 3em;
+}
+
+.section {
+    /* Define el estilo de las secciones principales con padding para crear espacio alrededor del contenido */
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.section img {
+    /* Asegura que las imágenes dentro de las secciones se ajusten al ancho disponible y mantengan su proporción */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    /* Define el tamaño de la fuente para los títulos de las secciones */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    /* Define el tamaño de la fuente para los párrafos dentro de las secciones */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    /* Estiliza los botones con un fondo verde, texto blanco, padding y bordes redondeados */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    /* Cambia el color del botón cuando el usuario pasa el cursor por encima */
+    background-color: #45a049;
+}
+
+/*CSS de la pagina destinos*/
+.destino {
+    margin-bottom: 30px;
+}
+
+.destino img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destino h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.destino p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    /* Estiliza el pie de página con un fondo oscuro, texto blanco, y centrado */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+    margin-top: 50px;
+}
+
+footer a {
+    /* Estiliza los enlaces en el pie de página para que se destaquen con un color verde */
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/*CSS para formulario*/
+/* Contenedor del formulario de contacto 
+   - Define el tamaño máximo del formulario y lo centra en la página con márgenes automáticos.
+   - Añade un espacio en la parte inferior para separar el formulario del contenido siguiente. */
+   .contacto-formulario {
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+/* Estilo del formulario 
+   - Dispone los elementos del formulario en una columna vertical. */
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de las etiquetas 
+   - Añade espacio debajo de las etiquetas y destaca el texto. */
+.contacto-formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo de los campos de entrada y área de texto
+   - Proporciona padding, márgenes, bordes y un tamaño de fuente consistente.
+   - Redondea los bordes para un aspecto más amigable. */
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Estilo del botón de envío
+   - Aplica un fondo verde, texto blanco, y redondea los bordes.
+   - Cambia el cursor a una mano para indicar que es interactivo. */
+.contacto-formulario button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Efecto hover del botón 
+   - Cambia el color de fondo cuando el usuario pasa el cursor sobre el botón. */
+.contacto-formulario button:hover {
+    background-color: #45a049;
+}
+
+/* Sección de información de contacto 
+   - Centra el texto y proporciona márgenes para separar esta sección de otros contenidos. */
+.contacto-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo del título en la sección de contacto 
+   - Aumenta el tamaño del texto del título. */
+.contacto-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los párrafos en la sección de contacto 
+   - Aplica un tamaño de fuente más grande.
+   - Añade espacio debajo de los párrafos. */
+.contacto-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Estilo de los enlaces en la sección de contacto 
+   - Aplica un color verde a los enlaces y elimina el subrayado predeterminado. */
+.contacto-info a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Efecto hover en los enlaces 
+   - Añade un subrayado cuando el usuario pasa el cursor sobre los enlaces. */
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividad */
+
+/* Estilos para pantallas con un ancho máximo de 768px (tablets y pantallas medianas) */
+@media (max-width: 768px) {
+    header {
+        /* Reduce el padding en el encabezado para pantallas más pequeñas */
+        padding: 15px 5%;
+    }
+
+    nav a {
+        /* Cambia los enlaces de navegación a un bloque vertical en lugar de horizontal */
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+    }}
